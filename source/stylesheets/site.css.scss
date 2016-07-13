@@ -1,7 +1,9 @@
 @import "bootstrap.min.css";
 
 .card-image-top {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
 }
 
 .banner {
@@ -19,6 +21,7 @@
   h1 {
     font-size: 3.5em;
     font-weight: 200;
+    color: lightcoral;
   }
 }
 
