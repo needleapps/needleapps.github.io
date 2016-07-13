@@ -1,0 +1,131 @@
+.kaato {
+  font-family: 'Lato', 'Helvetica Neue';
+  font-size: 12px;
+
+  .big-banner {
+    min-height: 300px;
+    text-align: center;
+
+    .logo {
+      background: url('/images/kaato/logo.png') no-repeat center;
+      background-size: 70px;
+      height: 70px;
+      width: 70px;
+      border-radius: 5px;
+      margin: 60px auto 20px;
+    }
+
+    small {
+      display: block;
+      font-size: 50%;
+      margin-top: 7px;
+      color: #888;
+    }
+
+    .app-store-link {
+      display: inline-block;
+      margin-top: 25px;
+    }
+  }
+
+  navbar {
+    display: block;
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+
+    a.brand {
+      color: #444;
+      font-size: 2em;
+      font-weight: 200;
+
+      &:hover, &:active {
+        text-decoration: none;
+        color: lightcoral;
+      }
+    }
+
+    ul.links {
+      float: right;
+      list-style: none;
+      margin-top: 20px;
+
+      li {
+        display: inline-block;
+        float: right;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  footer.footer {
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+
+    p.copyright {
+      float: left;
+    }
+
+    p.attribution {
+      float: right;
+    }
+  }
+}
+
+.kaato_privacy, .kaato_faq {
+  h1 {
+    font-size: 2.1em;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: darkslategrey;
+  }
+}
+
+@media (max-width: 33.9em) {
+  .kaato {
+    font-size: 16px;
+
+    .big-banner {
+      min-height: 200px;
+
+      .logo {
+        margin-top: 20px;
+      }
+    }
+
+    navbar {
+      text-align: center;
+
+      a.brand {
+        display: block;
+      }
+
+      ul.links {
+        display: inline-block;
+        float: none;
+        padding: 0px;
+        margin: 5px auto 20px;
+
+        li {
+          float: none;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    footer.footer {
+      overflow: auto;
+      margin-top: 50px;
+
+      p.attribution, p.copyright {
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+}
