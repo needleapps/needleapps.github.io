@@ -1,13 +1,12 @@
-.kaato {
+%base-app {
   font-family: 'Lato', 'Helvetica Neue';
-  font-size: 12px;
+  font-size: 14px;
 
   .big-banner {
     min-height: 300px;
     text-align: center;
 
     .logo {
-      background: url('/images/kaato/logo.png') no-repeat center;
       background-size: 70px;
       height: 70px;
       width: 70px;
@@ -71,23 +70,8 @@
       float: right;
     }
   }
-}
 
-.kaato_privacy, .kaato_faq {
-  h1 {
-    font-size: 2.1em;
-    margin: 20px 0;
-  }
-
-  h2 {
-    font-size: 1.6em;
-    font-weight: 400;
-    color: darkslategrey;
-  }
-}
-
-@media (max-width: 33.9em) {
-  .kaato {
+  @media (max-width: 33.9em) {
     font-size: 16px;
 
     .big-banner {
@@ -128,4 +112,34 @@
       }
     }
   }
+}
+
+%app-privacy-faq {
+  h1 {
+    font-size: 2.1em;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-top: 2em;
+    color: darkslategrey;
+  }
+}
+
+.seep, .kaato {
+  @extend %base-app;
+}
+
+.seep_faq, .kaato_faq, .seep_privacy, .kaato_privacy {
+  @extend %app-privacy-faq;
+}
+
+.kaato .big-banner .logo {
+  background-image: url('/images/kaato/logo.png');
+}
+
+.seep .big-banner .logo {
+  background-image: url('/images/seep/logo.png');
 }

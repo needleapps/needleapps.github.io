@@ -11,6 +11,7 @@ activate :directory_indexes
 page '/404.html', directory_index: false
 
 page 'kaato/*', layout: :kaato
+page 'seep/*', layout: :seep
 
 configure :development do
   activate :livereload
