@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <title>{{ page.title }}</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body class="{{ page.page_classes }}">
+  <div class='container'>
+      <navbar>
+        <a class='brand' href='/seep/'>Seep</a>
+        <ul class='links'>
+          <li>
+            <a href='/seep/privacy'>Privacy Policy</a>
+          </li>
+          <li>
+            <a href='/seep/faq'>Support</a>
+          </li>
+        </ul>
+      </navbar>
+      <div class='content'>{{ content }}</div>
+      <footer class='footer'>
+        <p class='copyright'>All rights reserved &copy; 2013&ndash;2020 Jasvir Singh Cheema</p>
+        <p class='attribution'>Made with love by <a href="/">Needle Apps</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
