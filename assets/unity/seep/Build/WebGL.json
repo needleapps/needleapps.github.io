@@ -1,7 +1,7 @@
 {
 "companyName": "Needle Apps Pty Ltd",
 "productName": "Seep",
-"productVersion": "refs/tags/v1.0.0-alpha1",
+"productVersion": "refs/tags/v1.0.0-alpha2",
 "dataUrl": "WebGL.data.unityweb",
 "wasmCodeUrl": "WebGL.wasm.code.unityweb",
 "wasmFrameworkUrl": "WebGL.wasm.framework.unityweb",
