@@ -3,3 +3,6 @@ baseurl: ""
 url: "needleapps.com"
 exclude:
   - kaato/
+plugins:
+  - jekyll-redirect-from
+  

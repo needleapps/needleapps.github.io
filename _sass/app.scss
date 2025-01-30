@@ -7,11 +7,13 @@
     text-align: center;
 
     .logo {
-      background-size: 70px;
-      height: 70px;
-      width: 70px;
-      border-radius: 5px;
+      background-size: 200px;
+      height: 200px;
+      width: 200px;
+      border-radius: 15px;
       margin: 60px auto 20px;
+      box-shadow: 1px 1px 20px #ddd;
+      border: 1px solid #ddd;
     }
 
     small {
@@ -141,11 +143,17 @@
 }
 
 .seep .big-banner .logo {
-  background-image: url('/assets/images/seep/logo.png');
+  background-image: url('/assets/images/seep/icon.jpg');
 }
 
 .webgl-content {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.app-store-links {
+  display: flex;
+  margin-bottom: 3em;
+  align-items: center;
 }
